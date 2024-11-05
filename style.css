@@ -1,51 +1,14 @@
-body {
-  background-color: aliceblue;
+h1 {
+  height: 50px;
 }
 
-.cube {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: lightskyblue;
-  animation-name: cube-loading;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  bottom: 40vw;
-  left: 30vw;
-}
-
-@keyframes cube-loading {
-  0% {
-    bottom: 40vw;
-    left: 30vw;
-    width: 100px;
-    height: 100px;
-  }
-  25% {
-    bottom: 60vw;
-    left: 30vw;
-    width: 200px;
-    height: 200px;
-    rotate: 90deg;
-  }
-  50% {
-    bottom: 60vw;
-    left: 60vw;
-    width: 250px;
-    height: 250px;
-    rotate: 180deg;
-  }
-  75% {
-    bottom: 40vw;
-    left: 60vw;
-    rotate: 270deg;
-  }
-  100% {
-    bottom: 40vw;
-    left: 30vw;
-    width: 100px;
-    height: 100px;
-    rotate: 360deg;
-  }
+h1::after,
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: blue;
+  margin: 0 5px;
+  margin-bottom: 6px;
 }
