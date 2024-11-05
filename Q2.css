@@ -1,0 +1,37 @@
+.factor {
+    margin: 0 auto;
+    border-collapse: collapse; 
+  }
+  
+
+  #factor th {
+    border: 0.2px solid black;
+    border-radius: 0.2rem;
+    padding: 10px;
+    background-color: #f5e5e2; 
+    text-align: center;
+  }
+  
+  
+  #factor td {
+    text-align: center;
+    border: 0.2px solid black;
+    border-radius: 0.2rem;
+    padding: 10px;
+  }
+  
+  .Add {
+    display: block;
+    border-radius: 1rem;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color:rgb(215, 215, 215);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Add:hover {
+    background-color: #45a049;
+  }
+  
