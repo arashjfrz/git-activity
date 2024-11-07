@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <h1>Task Board</h1>
+    <div class="board">
+        <!-- To Do Column -->
+        <div class="column">
+            <h2>To Do</h2>
+            <div id="todoList" class="task-list"></div>
+            <button onclick="addTask('todo')">+ Add a task</button>
+        </div>
+
+        <!-- Doing Column -->
+        <div class="column">
+            <h2>Doing</h2>
+            <div id="doingList" class="task-list"></div>
+            <button onclick="addTask('doing')">+ Add a task</button>
+        </div>
+
+        <!-- Done Column -->
+        <div class="column">
+            <h2>Done</h2>
+            <div id="doneList" class="task-list"></div>
+            <button onclick="addTask('done')">+ Add a task</button>
+        </div>
+    </div>
+
+    <!-- Modal for Editing Task -->
+    <div id="editModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Edit Task</h3>
+            <input type="text" id="editTaskInput">
+            <button onclick="saveTask()">Save</button>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
